@@ -15,13 +15,13 @@ int main(void)
 		c = 1;
 		while (c <= 9)
 		{
-			putchar(d % 10 + '0');
-			putchar(c % 10 + '0');
-			if (c != d && d < c)
+			if (c != d && c > d)
 			{
-			}
+				putchar(d % 10 + '0');
+				putchar(c % 10 + '0');
 			putchar(',');
 			putchar(' ');
+			}
 			c++;
 		}
 		d++;
