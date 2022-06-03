@@ -1,20 +1,15 @@
 #include <stdio.h>
 /**
- * main -enrty point
+ * main - entry point
  *
  * Return: Always 0 (Success)
- *
  */
 int main(void)
 {
-	char c = 'a';
+	int a = 0;
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
+	while (a < 10)
+		printf("%d", a++);
 	putchar('\n');
 	return (0);
-
 }
