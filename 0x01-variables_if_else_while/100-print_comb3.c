@@ -17,7 +17,7 @@ int main(void)
 		{
 			putchar(d % 10 + '0');
 			putchar(c % 10 + '0');
-			if (c != d && c < d)
+			if (c != d && d < c)
 			{
 			}
 			putchar(',');
