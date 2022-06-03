@@ -19,14 +19,17 @@ int main(void)
 			f = 2;
 			while (f <= 9)
 			{
-				putchar(d % 10 + '0');
-				putchar(c % 10 + '0');
-				putchar(f % 10 + '0');
-				if (c != d && f != d && f != c && d > c && c > f)
+				if (c != d && f != d && f != c && d < c && c < f)
 				{
+					putchar(d % 10 + '0');
+					putchar(c % 10 + '0');
+					putchar(f % 10 + '0');
+					if (d != 7)
+					{
+					putchar(',');
+					putchar(' ');
+					}
 				}
-				putchar(',');
-				putchar(' ');
 				f++;
 			}
 			c++;
