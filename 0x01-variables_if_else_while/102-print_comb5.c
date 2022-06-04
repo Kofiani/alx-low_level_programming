@@ -6,38 +6,25 @@
  */
 int main(void)
 {
-	int a = 0;
-	int b = 0;
-	int c = 0;
-	int d = 0;
+	int a, b;
 
-	while (a < 10)
+	while (a < 100)
 	{
 		b = 0;
-		while (b < 10)
+		while (b < 100)
 		{
-			c = 0;
-			while (c < 10)
+			if (b > a)
 			{
-				d = 0;
-				while (d < 10)
+				putchar('0' + a / 10);
+				putchar('0' + a % 10);
+				putchar(' ');
+				putchar('0' + b / 10);
+				putchar('0' + b % 10);
+				if (a < 98)
 				{
-					if (c > a || b < d)
-					{
-						putchar(a % 10 + '0');
-						putchar(b % 10 + '0');
-						putchar(' ');
-						putchar(c % 10 + '0');
-						putchar(d % 10 + '0');
-						if (a <= 9)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-					d++;
+					putchar(',');
+					putchar(' ');
 				}
-				c++;
 			}
 			b++;
 		}
