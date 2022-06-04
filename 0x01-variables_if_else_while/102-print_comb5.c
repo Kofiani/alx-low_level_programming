@@ -24,12 +24,12 @@ int main(void)
 				{
 					if (b < d)
 					{
-						putchar('0' + a % 10);
-						putchar('0' + b % 10);
+						putchar(a % 10 + '0');
+						putchar(b % 10 + '0');
 						putchar(' ');
-						putchar('0' + c % 10);
-						putchar('0' + d % 10);
-						if (b <= 9 )
+						putchar(c % 10 + '0');
+						putchar(d % 10 + '0');
+						if (a <= 9 )
 						{
 							putchar(',');
 							putchar(' ');
