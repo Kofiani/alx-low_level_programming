@@ -11,33 +11,33 @@ int main(void)
 	int c = 0;
 	int d = 0;
 
-	while (a < 10)
+	while (a < 100)
 	{
 		b = 0;
-		while (b < 10)
+		while (b < 100)
 		{
-			c = 0;
-			while (c < 10)
-			{
-				d = 0;
-				while (d < 10)
-				{
-					if (b < d)
+		//	c = 0;
+		//	while (c < 10)
+		//	{
+		//		d = 0;
+		//		while (d < 10)
+		//		{
+					if (a != b)
 					{
 						putchar('0' + a % 10);
-						putchar('0' + b % 10);
 						putchar(' ');
-						putchar('0' + c % 10);
-						putchar('0' + d % 10);
-						if (b <= 9 )
+						putchar('0' + b % 10);
+						//putchar('0' + c % 10);
+						//putchar('0' + d % 10);
+						if (b <= 99 )
 						{
 							putchar(',');
 							putchar(' ');
 						}
-					}
-					d++;
-				}
-				c++;
+					//}
+					//d++;
+				//}
+				//c++;
 			}
 			b++;
 		}
