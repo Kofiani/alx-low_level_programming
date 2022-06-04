@@ -22,14 +22,14 @@ int main(void)
 				d = 0;
 				while (d < 10)
 				{
-					if (b < d)
+					if (c > a || b < d)
 					{
 						putchar(a % 10 + '0');
 						putchar(b % 10 + '0');
 						putchar(' ');
 						putchar(c % 10 + '0');
 						putchar(d % 10 + '0');
-						if (a <= 9 )
+						if (a <= 9)
 						{
 							putchar(',');
 							putchar(' ');
