@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - check file locally
@@ -6,6 +7,6 @@
  */
 int main(void)
 {
-	print_alphabet();
+	times_table();
 	return(0);
 }
