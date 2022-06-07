@@ -5,14 +5,14 @@
  * Return: 0.
  */
 void times_table(void)
-{	int m;
+{	int m, i, j;
 
-	for (int i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (int j = 0; j < 10; j++)
-		{	
+		for (j = 0; j < 10; j++)
+		{
 			m = (i * j);
-			if ( m > 9 )
+			if (m > 9)
 			{
 				_putchar(m / 10 + '0');
 			}
