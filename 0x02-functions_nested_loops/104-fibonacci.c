@@ -7,7 +7,7 @@ int main(void)
 {
 	int a, b, c;
 	long int n1, n2, fn, fn2, n11, n22;
-	
+
 	n1 = 1;
 	n2 = 2; b = c = 1;
 	printf("%ld, %ld", n1, n2);
@@ -43,7 +43,7 @@ int main(void)
 		{
 			b = 0;  
 		}
-		printf("\n");
-		return (0);
 	}
+	printf("\n");
+	return (0);
 }
