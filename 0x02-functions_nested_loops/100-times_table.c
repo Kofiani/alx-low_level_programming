@@ -1,13 +1,14 @@
-#include "main.h" 
+#include "main.h"
 /**
  * print_times_table - function
  * @n: parameter
  *
- * Return: 0.  
+ * Return: 0.
  */
 void print_times_table(int n)
 {
-	int m,p, k;   
+	int m, p, k;
+
 	if (n >= 0 && n <= 15)
 	{
 		for (m = 0; m <= n; m++)
