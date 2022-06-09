@@ -7,9 +7,9 @@
  */
 int _isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= 65 && c <= 90)
 	{
-		while (c < 'Z')
+		while (c < 91 )
 		{
 			c++;
 			return (1);
