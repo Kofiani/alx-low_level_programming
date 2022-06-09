@@ -7,10 +7,10 @@
 
 void print_number(int n)
 {
-	int c = 1;
+	unsigned int c = 1;
 	unsigned int a = n;
 
-	if (a < 0)
+	if (n < 0)
 	{
 		a = n * (-1);
 		_putchar('-');
