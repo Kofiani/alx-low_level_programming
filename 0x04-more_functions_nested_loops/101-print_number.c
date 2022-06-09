@@ -8,12 +8,16 @@
 void print_number(int n)
 {
 	unsigned int c = 1;
-	unsigned int a = n;
+	unsigned int a;
 
 	if (n < 0)
 	{
 		a = n * (-1);
 		_putchar('-');
+	}
+	else
+	{
+		a = n;
 	}
 
 	while (c <= a)
