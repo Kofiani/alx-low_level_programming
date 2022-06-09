@@ -8,7 +8,7 @@
 void print_number(int n)
 {
 	unsigned int c = 1;
-	unsigned int a;
+	unsigned int a, b;
 
 	if (n < 0)
 	{
@@ -20,14 +20,12 @@ void print_number(int n)
 		a = n;
 	}
 
-	while (c <= a)
-	{
-		c *= 10;
-	}
+	b = a;
 
-	if (a > 0)
+	while (b > 9)
 	{
-		c /= 10;
+		b/= 10;
+		c *= 10;
 	}
 
 	for (; c >= 1; c /= 10)
