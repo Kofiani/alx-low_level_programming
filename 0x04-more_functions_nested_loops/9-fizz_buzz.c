@@ -8,9 +8,6 @@
 int main(void)
 {
 	int i;
-	char *f = "Fizz";
-	char *b = "Buzz";
-	char *fb = "FizzBuzz";
 
 	for (i = 1; i <= 100; i++)
 	{
@@ -20,18 +17,17 @@ int main(void)
 		}
 		else if (i % 3 == 0 && i % 5 != 0)
 		{
-			printf("%s ", f);
+			printf("Fizz ");
 		}
 		else if (i % 5 == 0 && i % 3 != 0)
 		{
-			printf("%s ", b);
+			printf("Buzz ");
 		}
 		else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("%s ", fb);
+			printf("FizzBuzz ");
 		}
 	}
 	printf("\n");
-
 	return (0);
 }
