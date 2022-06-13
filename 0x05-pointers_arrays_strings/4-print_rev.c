@@ -12,11 +12,12 @@ void print_rev(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		i++;
 		if (s[i] == '\0')
 		{
 			i--;
+			break;
 		}
+		i++;
 	}
 	while (i >= 0)
 	{
