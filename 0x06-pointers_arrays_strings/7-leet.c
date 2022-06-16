@@ -25,4 +25,5 @@ char *leet(char *a)
 		}
 		c++;
 	}
+	return (a);
 }
