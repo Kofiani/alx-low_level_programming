@@ -2,7 +2,7 @@
 
 /**
  * leet - function
- * @a: param
+ * @str: param
  * Return: pointer
  */
 
@@ -13,7 +13,7 @@ char *leet(char *str)
 	int num[] = {52, 51, 48, 55, 49};
 	int c = 0, i;
 
-	while (str[c] !='\0')
+	while (str[c] != '\0')
 	{
 		for (i = 0; i < 5; i++)
 		{
