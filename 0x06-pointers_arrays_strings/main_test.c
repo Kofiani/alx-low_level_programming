@@ -1,23 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-
-int main(void)
+int main(void) 
 {
-	char s1[98] = "Hello ";
-	char s2[] = "World!\n";
-	char *ptr;
-
-	printf("%s\n", s1);
-	printf("%s", s2);
-	ptr = _strcat(s1, s2);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", ptr);
-	return (0);
+   	char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+   	char *ptr;
+  	ptr = cap_string(str);
+   	printf("%s", ptr);
+   	printf("%s", str);
+   	return (0); 
 }
