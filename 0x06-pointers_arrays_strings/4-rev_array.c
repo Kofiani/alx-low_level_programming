@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reverse_array
+ * reverse_array - function
  * @a: array
  * @n: element
  * Return: void
@@ -18,8 +18,8 @@ void reverse_array(int *a, int n)
 	while (i < j)
 	{
 		t = a[i];
-		a[i] = a[j - i];
-		a[j - i] = t;
+		a[i] = a[j];
+		a[j] = t;
 		i++;
 		j--;
 	}
