@@ -21,10 +21,12 @@ char *cap_string(char *str)
 	{
 		for (j = 0; j < 24; j++)
 		{
-			if (str[i - 1] == spe[j] && (str[i] >= 97 && str[i] <= 122))
+			if (str[i] >= 97 && str[i] <= 122)
 			{
-				
-				str[i] = str[i] - 32;
+				if (str[i - 1] == spe[j])
+				{
+					str[i] = str[i] - 32;
+				}
 			}
 		}
 		i++;
