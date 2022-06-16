@@ -12,7 +12,7 @@ char *rot13(char *rot)
 	char rot13[] ="nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int c = 0, i;
 
-	while (rot[c] = '\0')
+	while (rot[c] != '\0')
 	{
 		for (i = 0; i < 52; i++)
 		{
