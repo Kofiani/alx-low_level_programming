@@ -5,6 +5,7 @@
  * _strspn - function
  * @s: string
  * @accept: string
+ * Return: value
  */
 
 unsigned int _strspn(char *s, char *accept)
