@@ -4,20 +4,17 @@
  * _strchr - function
  * @s: string pointer
  * @c: character value
+ * Return: value
  */
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int i;
 
-	while (*s != '\0')
+	for (i = 0; *s >= '\0'; i++)
 	{
 		if (s[i] == c)
-		{
 			return (s + i);
-		}
-		i++;
 	}
-
 	return ('\0');
 }
