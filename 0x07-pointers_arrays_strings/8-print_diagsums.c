@@ -14,14 +14,14 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		p = (l * size) + i;
+		p = (i * size) + i;
 		l2r += *(a + p);
 	}
 	for (j = 0; j < size; j++)
 	{
 		p = (j * size) + (size - 1 - j);
-		r += 8(a + p);
+		r2l += *(a + p);
 	}
 
-	print("%d, %d\n", l2r, r2l);
+	printf("%d, %d\n", l2r, r2l);
 }
