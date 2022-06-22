@@ -10,7 +10,7 @@
  * Return: sqrt
  */
 
-int sqrt_guess(int guess, num)
+int sqrt_guess(int guess, int num)
 {
 	if (num == guess / 2)
 	{
@@ -38,7 +38,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else if (num == 1)
+	else if (n == 1)
 	{
 		return (1);
 	}
