@@ -4,6 +4,7 @@
  * _pow_recursion - function to find exponent of integer
  * @x: integer to convert
  * @y: exponent
+ * Return: integer
  */
 
 int _pow_recursion(int x, int y)
