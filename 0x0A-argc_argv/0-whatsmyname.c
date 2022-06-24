@@ -2,7 +2,7 @@
 
 /**
  * main - this is the part that runs the program
- * @argc - this argument tracks the number of elements passed in the argv array
+ * @argc: this argument tracks the number of elements passed in the argv array
  * @argv: is pointer array that contains the number of strings typed in the CLI
  * Return: returns 0 from the main function
  */
