@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * cents - returns the lowest amount of change needed
+ * @cash: cash deposited
+ */
+
 void cents(int cash)
 {
 	int arr[5] = {25, 10, 5, 2, 1};
 	int rem, count = 0, i = 0, j;
-	
+
 	while (i < 5)
 	{
 		j = i;
@@ -36,13 +41,20 @@ void cents(int cash)
 	i++;
 }
 
+/**
+ * main - the main body of the function
+ * @argc: keeps count of the elements in argv
+ * @argv: array of elements from command line
+ * Return: Always 0
+ */
+
 int main(int argc, char *argv[])
 {
 
 	if (argc > 2 || argc == 1)
 	{
 		printf("Error\n");
-		return (1); 
+		return (1);
 	}
 	if (atoi(argv[1]) == -1)
 	{
