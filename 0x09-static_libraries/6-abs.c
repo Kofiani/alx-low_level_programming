@@ -1,19 +1,22 @@
 #include "main.h"
-
-int _abs(int n)
+/**
+ * _abs - function
+ *
+ * @c: parameter.
+ *
+ * Return: interger
+ *
+ */
+int _abs(int c)
 {
- 
-	if (n > 0)  
-	{   
-		return (n);  
-	}  
-	else if (n < 0)  
-	{   
-		return (-n);  
-	}  
-	else  
-	{   
-		return (n);  
-	} 
+	int a = -1;
 
+	if (c < 0)
+	{
+		return (c * a);
+	}
+	else
+	{
+		return (c);
+	}
 }

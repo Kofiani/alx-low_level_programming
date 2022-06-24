@@ -1,13 +1,20 @@
 #include "main.h"
 
+/**
+ * _strlen - function that returns the length of a string
+ *
+ * @s: parameter
+ * Return: sting counter
+ */
+
 int _strlen(char *s)
 {
-	int len = 0;
+	int i;
 
-	while(*s++)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		len++;
+		i++;
 	}
-
-	return (len);
+	return (i);
 }
