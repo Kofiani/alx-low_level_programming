@@ -21,6 +21,7 @@ char *create_array(unsigned int size, char c)
 		else
 			ptr[i] = c;
 	}
-
+	
+	free(ptr);
 	return (ptr);
 }
