@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * create_array - creates an array with dynamic allocation
@@ -9,8 +11,8 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int i;
-	char *ptr = (sizeof(c) * size);
+	unsigned int i;
+	char *ptr = malloc(sizeof(c) * size);
 
 	for (i = 0; i < size; i++)
 	{
