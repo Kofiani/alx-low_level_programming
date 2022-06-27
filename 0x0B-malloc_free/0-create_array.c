@@ -17,11 +17,17 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 	{
 		if (size == 0)
+		{
 			return (NULL);
+		}
 		else if (ptr == NULL)
+		{
 			return (NULL);
+		}
 		else
+		{
 			ptr[i] = c;
+		}
 	}
 	
 	free(ptr);
