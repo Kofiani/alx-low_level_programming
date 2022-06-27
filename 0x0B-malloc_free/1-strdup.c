@@ -8,12 +8,20 @@ int strLen(char *s);
 
 int strLen(char *s)
 {
-	int i = 0;
+	int i;
 
-	while (*s)
+	if (s == NULL)
 	{
-		i++;
-		s++;
+		return (0);
+	}
+	else
+	{
+		i = 0;
+		while (*s)
+		{
+			i++;
+			s++;
+		}
 	}
 
 	return (i);
@@ -34,7 +42,7 @@ char *_strdup(char *str)
 	{
 		ptr = NULL;
 	}
-	if (ptr == NULL)
+	else if (ptr == NULL)
 	{
 		return (NULL);
 	}
@@ -47,7 +55,7 @@ char *_strdup(char *str)
 			i++;
 			str++;
 		}
-
-		return (ptr);
 	}
+
+	return (ptr);
 }
