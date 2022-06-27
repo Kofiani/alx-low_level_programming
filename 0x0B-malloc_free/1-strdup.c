@@ -12,6 +12,7 @@ int strLen(char *s)
 
 	while (*s)
 	{
+		i++;
 		s++;
 	}
 
