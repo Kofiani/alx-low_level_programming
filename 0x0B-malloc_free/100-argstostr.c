@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * argstorstr - concatenates arguments from CLI
- * @ac - count from cli
+ * argstostr - concatenates arguments from CLI
+ * @ac: - count from cli
  * @av: pointer to variable
  * Return: pointer variable
  */
@@ -32,7 +32,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (byte = 0; av[arg][byte]; byte++)
 		{
-			str[i++] = av[arg][byte]; 
+			str[i++] = av[arg][byte];
 		}
 		str[i++] = '\n';
 	}
