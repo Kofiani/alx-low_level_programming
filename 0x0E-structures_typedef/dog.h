@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 
-/**
+/*
  * File: dog.h
  * Desc: Header file to define struct dog.
  */
@@ -20,8 +20,8 @@ struct dog
 	char *owner;
 };
 
-/**
- * dog_t - Typedef for dog_t
+/*
+ * dog_t - Typedef for struct dog
  */
 
 typedef struct dog dog_t;
