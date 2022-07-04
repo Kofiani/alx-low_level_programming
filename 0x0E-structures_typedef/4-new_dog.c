@@ -37,9 +37,7 @@ char *strcop(char *dest, char *src)
 	int i = 0;
 
 	for (; src[i]; i++)
-	{
 		dest[i] = src[i];
-	}
 
 	dest[i] = '\0';
 
@@ -73,7 +71,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dog_obj->owner = malloc(sizeof(char) * (strl(name) + 1));
+	dog_obj->owner = malloc(sizeof(char) * (strl(owner) + 1));
 	if (dog_obj->owner == NULL)
 	{
 		free(dog_obj->name);
