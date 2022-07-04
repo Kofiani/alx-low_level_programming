@@ -36,11 +36,9 @@ char *strcop(char *dest, char *src)
 {
 	int i = 0;
 
-	while (*src)
+	for (; src[i]; i++)
 	{
 		dest[i] = src[i];
-		src++;
-		i++;
 	}
 
 	dest[i] = '\0';
