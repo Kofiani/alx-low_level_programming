@@ -40,6 +40,7 @@ char *strcop(char *dest, char *src)
 	{
 		dest[i] = src[i];
 		src++;
+		i++;
 	}
 
 	dest[i] = '\0';
