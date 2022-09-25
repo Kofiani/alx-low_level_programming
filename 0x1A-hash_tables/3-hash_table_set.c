@@ -43,10 +43,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		free(data);
 		return (0);
-		data->value = value_copy;
-		data->next = ht->array[index];
-		ht->array[index] = data;
-
-		return (1);
 	}
+	data->value = value_copy;
+	data->next = ht->array[index];
+	ht->array[index] = data;
+
+	return (1);
 }
